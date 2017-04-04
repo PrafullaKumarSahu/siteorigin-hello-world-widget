@@ -56,4 +56,5 @@ class Hello_World_Widget extends SiteOrigin_Widget{
 		return 'hw-templates';
 	}
 }
-siteorigin_widget_register('siteorigin-hello-world-widget', __FILE__, 'Hello_World_Widget');
+//siteorigin_widget_register function uses widget id, widget file path, and widget class name as arguments
+siteorigin_widget_register('hello-world-widget', __FILE__, 'Hello_World_Widget');
