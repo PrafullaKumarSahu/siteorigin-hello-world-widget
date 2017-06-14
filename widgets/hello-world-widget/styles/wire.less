@@ -1,0 +1,18 @@
+@import "../../../base/less/mixins";
+
+.widget-function('import_google_font');
+
+@text_color: #74F;
+@font_size: 12px;
+@padding: 10px;
+@hello_world_font: open sans;
+@hello_world_font_weight: bolder;
+@align: right;
+
+.hello-world{
+	font-size: @font_size;
+	color: @text_color;
+	font-family: @hello_world_font;
+	font-weight: @hello_world_font_weight;
+	text-align: @align;
+}

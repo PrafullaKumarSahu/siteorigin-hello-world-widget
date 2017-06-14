@@ -1,0 +1,28 @@
+@import "../../../base/less/mixins";
+
+.widget-function('import_google_font');
+
+@text_color: #F74;
+@font_size: 20px;
+@padding: 10px;
+@hello_world_font: lato;
+@hello_world_font_weight: normal;
+@align: left;
+
+.hello-world{
+	font-size: @font_size;
+	color: @text_color;
+	font-family: @hello_world_font;
+	font-weight: @hello_world_font_weight;
+	text-align: @align;
+}
+
+.ow-hello-world-base{
+	p{
+	    .font(@hello_world_font, @hello_world_font_weight);
+	    
+	    font-size: @font_size;
+		padding: @padding @padding*2;
+		color: @text_color !important;
+	}
+}
